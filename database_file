@@ -1,0 +1,15 @@
+CREATE DATABASE feedback_db;
+
+USE feedback_db;
+
+CREATE TABLE feedback (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    usn VARCHAR(10) NOT NULL,
+    sem INT NOT NULL,
+    branch VARCHAR(100) NOT NULL,
+    feedback TEXT NOT NULL
+);
+
+sudo apt-get install php-mysql
